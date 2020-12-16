@@ -7,7 +7,9 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
   faRocket = faRocket;
+
   constructor() { }
 
   ngOnInit(): void {

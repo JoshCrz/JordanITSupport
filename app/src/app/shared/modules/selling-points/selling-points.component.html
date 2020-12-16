@@ -1,0 +1,12 @@
+<div class="container margin-fix bg-white">
+  <div class="row shadow">
+    <div class="col-12 col-sm-6 col-lg-3 text-center p-3" *ngFor="let sellingPoint of sellingPoints">
+      <fa-icon [icon]="sellingPoint.icon"></fa-icon>
+
+
+      <h2 class="h3">{{sellingPoint.title}}</h2>
+      <p class="text-muted m-0">{{sellingPoint.description}}</p>
+    </div>
+  </div>
+</div>
+<p>SELLING POINTS</p>

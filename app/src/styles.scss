@@ -1,3 +1,6 @@
+//material
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 //IMPORT FONT AWESOME
 //@import "./font-awesome/fontawesome.scss";
 //@import "./font-awesome/solid.scss";
@@ -7,7 +10,7 @@
 //IMPORT ONLY THE BOOTSTRAP WE NEED
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
-//@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/mixins";
 
 ////IMPORT ONLY THE MIXINS WE NEED
 @import "../node_modules/bootstrap/scss/vendor/rfs";
@@ -70,7 +73,7 @@
 @import "../node_modules/bootstrap/scss/popover";
 @import "../node_modules/bootstrap/scss/carousel";
 @import "../node_modules/bootstrap/scss/spinners";
-//@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities";
 ////IMPORT ONLY THE UTILITIES WE NEED
 @import "../node_modules/bootstrap/scss/utilities/align";
 @import "../node_modules/bootstrap/scss/utilities/background";

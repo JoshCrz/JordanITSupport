@@ -1,6 +1,8 @@
 .bg-galaxy {
+  /*
     height: 700px;
     background-image: url("src/assets/img/galaxy-bg.png");
     background-position: center;
-  
+  */
+  background-color: #b7b7b7;
 }
