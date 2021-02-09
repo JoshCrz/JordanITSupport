@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UtilityService } from 'src/app/shared/services/utility.service';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.css']
+  styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
 
-  constructor() { }
+  servicePoints: any;
+
+  constructor(private utilityService: UtilityService) { }
 
   ngOnInit(): void {
-
+    this.servicePoints = this.utilityService.getSellingServices();
+    console.log('sellingpoints')
+    console.log(this.servicePoints)
   }
 }

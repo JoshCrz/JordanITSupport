@@ -1,1 +1,20 @@
-<p>services works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <p>Services</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-6" *ngFor="let service of servicePoints">
+      <div class="d-flex flex-row align-items-center p-3">
+        <div class="m-3">
+          <fa-icon class="service-icon" [icon]="service.icon"></fa-icon>
+        </div>
+        <div>
+          <h3 class="h4">{{service.title}}</h3>
+          <p>{{service.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

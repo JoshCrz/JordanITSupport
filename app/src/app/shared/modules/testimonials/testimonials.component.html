@@ -1,0 +1,17 @@
+<div class="bg-primary text-white py-4">
+  <div class="text-center">    
+
+    <p>Reviews</p>
+
+    <ngb-carousel [showNavigationIndicators]="false" [showNavigationArrows]="false" [pauseOnHover]="false" [pauseOnFocus]="false" [interval]="2500">
+      <ng-template ngbSlide *ngFor="let review of reviews">
+        <div class="my-4 text-center slide">
+          <p class="font-spaced font-lg m-0">
+            "{{review.content}}"
+          </p>
+          <p class="text-muted">{{review.name}} - {{review.date | date: 'MMM d, y'}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
